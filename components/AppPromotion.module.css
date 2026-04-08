@@ -1,0 +1,166 @@
+.section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a0a00 0%, #3d1f00 100%);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.content {}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(232,93,38,0.2);
+  color: var(--primary-light);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border: 1px solid rgba(232,93,38,0.3);
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 420px;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.features li {
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.storeBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.1);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.storeBtn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.storeIcon {
+  font-size: 24px;
+}
+
+.storeSmall {
+  font-size: 11px;
+  color: rgba(255,255,255,0.6);
+  text-align: left;
+}
+
+.storeBig {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 260px;
+  height: 480px;
+  background: #111;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  border: 3px solid rgba(255,255,255,0.1);
+}
+
+.phoneScreen {
+  background: white;
+  border-radius: 24px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.phoneHeader {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.phoneCard {
+  background: var(--background);
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.phoneBtn {
+  margin-top: auto;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .visual {
+    display: none;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}
